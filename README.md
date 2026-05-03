@@ -1,4 +1,4 @@
-# EventSphere 🌍
+# EventSphere 🌍 (Active development)
 
 ## 📖 About the project
 
