@@ -1,1 +1,34 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/zRhvF2gB)
+# EventSphere 🌍
+
+## 📖 About the project
+
+This project is a web service for organizing local events (meetups, sports meetings).  
+The system allows you to:
+
+- create events;
+- manage the list of participants;
+- use interactive maps to select locations;
+- Automatically track weather conditions to plan outdoor activities.
+
+---
+
+## 🛠 Technology stack
+
+- **Framework:** Spring Boot (MVC, Security, Data JPA)
+- **Language:** Java 17+
+- **Database:** PostgreSQL (migrations via Liquibase / Flyway)
+- **Build System:** Maven
+- **Frontend:** HTML5, CSS3, JavaScript (AJAX), Thymeleaf / JSP
+- **API Integrations:** Weather API (OpenWeather / Yandex Weather), Maps API
+
+---
+
+## 🏗 Architecture
+
+The project is based on the principles of **SOLID** and **MVC**.
+
+### Basic structure:
+
+```text
+Controller -> Service -> Repository
+```
