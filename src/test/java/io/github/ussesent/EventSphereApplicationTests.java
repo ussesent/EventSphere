@@ -1,10 +1,10 @@
-package io.github.ussesent.eventPlanner;
+package io.github.ussesent;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EventPlannerApplicationTests {
+public class EventSphereApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -10,8 +10,6 @@ The system allows you to:
 - use interactive maps to select locations;
 - Automatically track weather conditions to plan outdoor activities.
 
----
-
 ## 🛠 Technology stack
 
 - **Framework:** Spring Boot (MVC, Security, Data JPA)
@@ -20,8 +18,6 @@ The system allows you to:
 - **Build System:** Maven
 - **Frontend:** HTML5, CSS3, JavaScript (AJAX), Thymeleaf / JSP
 - **API Integrations:** Weather API (OpenWeather / Yandex Weather), Maps API
-
----
 
 ## 🏗 Architecture
 
