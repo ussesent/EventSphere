@@ -4,7 +4,9 @@ import io.github.ussesent.entity.auth.User;
 import io.github.ussesent.entity.common.BaseEntity;
 import io.github.ussesent.entity.event.Event;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -26,18 +28,17 @@ import java.time.LocalDateTime;
 )
 public class EventRegistration extends BaseEntity {
 
+    @NotNull(message = "Событие обязательно")
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "event_id", nullable = false)
     private Event event;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
-
-    @Column(name = "registered_at", nullable = false)
-    private LocalDateTime registeredAt;
+    private User participant;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false)
     private RegistrationStatus status;
+
 }

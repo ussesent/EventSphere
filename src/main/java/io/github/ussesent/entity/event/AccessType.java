@@ -1,6 +1,7 @@
 package io.github.ussesent.entity.event;
 
 public enum AccessType {
-    PUBLIC,
+    OPEN,
+    OPEN_WITH_MODERATION,
     PRIVATE
 }
